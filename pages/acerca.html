@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/Logo prueba.png" type="image/x-icon">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Acerca de mí</title>
+</head>
+<body>
+    <div class="header-gradient"></div>
+    <div class="glassmorphism-layer"></div>
+    <header>
+        <div class="logo">
+            <img src="/img/Logo.png" alt="Logo de Martín Campagna" class="logo-png">
+            <span class="logo-texto">Martín Campagna</span>
+        </div>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="#">Trabajos</a>
+            <a href="/pages/case_studies.html">UX/UI</a>
+            <a href="/pages/acerca.html">Acerca de mi</a>
+            <a href="#seccion-contacto" id="boton-contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+    </main>
+    <footer class="footer">
+        <div class="redes-links">
+            <a href="https://www.behance.net/martincampagna" class="social-link" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/martincampagna/" class="social-link" target="_blank">LinkedIn</a>
+            <a href="https://martincampagna.gumroad.com/" class="social-link" target="_blank">Gumroad</a>
+        </div>
+        <div class="footer-contenido">
+            <p>Copyright 2023 © Martín Campagna - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuHamburguesa = document.getElementById('menu-hamburguesa');
+            var menu = document.querySelector('.menu');
+        
+            menuHamburguesa.addEventListener('click', function() {
+                menu.classList.toggle('activo');
+            });
+        });
+    </script>
+        
+</body>
+</html>

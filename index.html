@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/Logo prueba.png" type="image/x-icon">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Martin Campagna</title>
+</head>
+<body>
+    <div class="header-gradient"></div>
+    <div class="glassmorphism-layer"></div>
+    <header>
+        <div class="logo">
+            <img src="/img/Logo.png" alt="Logo de Martín Campagna" class="logo-png">
+            <span class="logo-texto">Martín Campagna</span>
+        </div>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Trabajos</a>
+            <a href="/pages/case_studies.html">UX/UI</a>
+            <a href="/pages/acerca.html">Acerca de mi</a>
+            <a href="#seccion-contacto" id="boton-contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="cta">
+            <div class="call">
+                <section>
+                    <h1><span class="hello-text">Hola!</span> Soy Martín, Diseñador Gráfico, UX/UI & Developer.</h1>
+                </section>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Dirección de correo">
+                        <a href="#">Contactame</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="galeria-contenedor">
+        <section class="galeria">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+            <div class="item item7"></div>
+            <div class="item item8"></div>
+        </section>
+    </section>
+
+
+    <div class="seccion-formulario">
+        <div class="gradient"></div>
+        <div class="contenido">  
+            <div class="texto">
+                <h1>Hablemos!</h1>
+                <p>Dejame tu consulta y me estaré comunicando entre 24 y 48 hs.</p>
+                <p class="icono-correo"><i class="fas fa-envelope"></i>martincampagna@gmail.com</p>
+                <Buenos class="locacion"><i class="fas fa-map-marker-alt"></i><p>Buenos Aires, Argentina</p>
+            </div>
+            <div class="inputsform" id="inputsform">
+                <form action="/enviar" method="post">
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                    <input type="email" name="correo" id="correo" placeholder="Tu correo electrónico">
+                    <input type="number" name="telefono" id="telefono" placeholder="Tu teléfono">
+                    <input type="text" name="ubicacion" id="ubicacion" placeholder="Tu ubicación">
+                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+      
+
+    <footer class="footer">
+        <div class="redes-links">
+            <a href="https://www.behance.net/martincampagna" class="social-link" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/martincampagna/" class="social-link" target="_blank">LinkedIn</a>
+            <a href="https://martincampagna.gumroad.com/" class="social-link" target="_blank">Gumroad</a>
+        </div>
+        <div class="footer-contenido">
+            <p>Copyright 2023 © Martín Campagna - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuHamburguesa = document.getElementById('menu-hamburguesa');
+            var menu = document.querySelector('.menu');
+        
+            menuHamburguesa.addEventListener('click', function() {
+                menu.classList.toggle('activo');
+            });
+        });
+    </script>
+        
+</body>
+</html>

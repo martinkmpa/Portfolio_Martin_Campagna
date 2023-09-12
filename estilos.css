@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font-family: 'Inconsolata', monospace;
+font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 40px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-png{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logo-texto{
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+
+.menu a{
+    color:#000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px;
+    align-items: center;
+}
+
+.menu a:hover{
+    color:#5c5c5c;
+}
+
+.menu-hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 6px auto;
+}
+
+.navbar {
+    padding: 40px;
+}
+
+.navbar-brand .logo {
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important; 
+}
+
+.navbar-brand {
+    color: #000 !important; 
+}
+
+.navbar-toggler-icon {
+    color: #000 !important;
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item:hover{
+    color: #a0a0a0 !important;
+}
+
+.card {
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 150px;
+}
+
+body{
+    background-color: #fff;
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.header-gradient{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background: conic-gradient(from 8.7deg at 45.75% 68.42%, #F5F2F2 -50.17deg, #F5F5F5 30.48deg, rgba(36, 137, 255, 0.41) 145.62deg, #FF5B4F 207.92deg, #F5F2F2 309.83deg, #F5F5F5 390.48deg);
+    filter: blur(40px);
+    transform: rotate(-180deg);
+    z-index: -2;
+}
+
+/* Estilo para la capa de glassmorphism */
+.glassmorphism-layer{
+    position: absolute;
+    top: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 99%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0.5px solid #fff;
+    background: rgba(255, 255, 255, 0.4); /* Color blanco translúcido */
+    backdrop-filter: blur(10px); /* Efecto glassmorphism */
+    z-index: -1; /* Coloca la capa por debajo de todo */
+}
+
+main{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* Estilo para el contenedor de la llamada a la acción (cta) */
+.cta{
+    padding: 20px;
+    text-align: left;
+    background: transparent;
+}
+
+.hello-text{
+    color: #4154FF;
+}
+
+.call h1{
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo para el contenido dentro de la llamada a la acción */
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 40px;
+    /* max-width: 700px; */
+}
+
+/* Estilo para el formulario de contacto */
+.contact-form{
+    display: flex;
+    align-items: left;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Estilo para el contenedor del input y el botón */
+.form-group{
+    display: flex;
+    align-items: left;
+}
+
+/* Estilo para el input del formulario */
+.contact-form input[type="text"]{
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1px 0 #bebebe;
+    font-weight: 500;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 250px;
+}
+
+/* Estilo para el botón "Contactame" */
+.contact-form a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 13px;
+}
+
+.contact-form a:hover{
+    background-color: #4154FF;
+}
+
+/* ACA EMPIEZA SECCION "ACERCA DE MI" */
+
+.contenedor-acerca{
+    display: flex;
+    padding: 50px;
+    max-width: 1140px;
+    margin-top: 200px;
+    height: 600px;
+    width: 80%;
+    text-align: center;
+}
+
+.perfil{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.texto-acerca{
+    margin-left: 40px;
+    line-height: 30px;
+    text-align: left;
+}
+
+/* ACA TERMINE LA SECCION "ACERCA DE MI" */
+
+
+/* ACA EMPIEZA LA SECCION "TRABAJOS" */
+
+.galeria-contenedor {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 50px;
+}
+
+.item{
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    box-shadow: 0 0 1px 0px #000;
+}
+
+.item1{
+    background-image: url(/img/Nomad.png);
+}
+.item2{
+    background-image: url(/img/Babel.png);
+}
+
+.item3{
+    background-image: url(/img/Guanaco.png);
+}
+.item4{
+    background-image: url(/img/Almanza.png);
+}
+
+.item5{
+    background-image: url(/img/Soul.png);
+}
+.item6{
+    background-image: url(/img/Rl.png);
+}
+
+.item7{
+    background-image: url(/img/Gin.png);
+}
+.item8{
+    background-image: url(/img/Chola.png);
+}
+
+/* ACA TERMINA LA SECCION "TRABAJOS" */
+
+/* ACA EMPIEZA LA SECCION "CONTACTO" */
+
+.seccion-formulario{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: conic-gradient(from -0.74deg at 54.05% 46.76%, #FFFFFF 0deg, rgba(36, 137, 255, 0.41) 89.49deg, #FFFFFF 187.76deg, #FF5B4F 270.85deg, #FFFFFF 360deg);
+    opacity: 0.4;
+    filter: blur(60px);
+    transform: rotate(0.19deg);
+    z-index: -1;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.texto{
+    max-width: 600px;
+    margin-right: 20px;
+    margin-left: 40px;
+    line-height: 70px;
+
+}
+
+.fas.fa-envelope{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.locacion{
+    display: flex;
+    align-items: center;
+}
+
+.fas.fa-map-marker-alt{
+    margin-left: 2px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.icono-correo{
+    display: flex;
+    align-items: center;
+}
+
+.texto h1{
+    color: #4154FF;
+}
+
+.inputsform {
+    width: 60%;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    min-width: 350px;
+    max-width: 700px
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 10px;;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    border: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    border-bottom: 2px solid #a0a0a0;
+    outline: none;
+    border: 0.5px solid #fff;
+    background: rgba(255, 255, 255, 0.4); /* Color blanco translúcido */
+    backdrop-filter: blur(10px); /* Efecto glassmorphism */
+}
+
+input:hover,
+textarea:hover{
+    border-bottom: 1px solid #4154FF;
+}
+
+#mensaje{
+    grid-column: span 2;
+    height: 200px;
+}
+
+#enviar{
+    grid-column: span 2;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#enviar:hover{
+    background-color: #4154FF;
+}
+
+/* ACA TERMINA LA SECCION "CONTACTO" */
+
+/* ACA EMPIEZA EL "FOOTER" */
+
+.footer{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.redes-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link{
+    color:#000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px;
+    align-items: center;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+.footer a:hover{
+    color:#5c5c5c;
+}
+
+.footer p{
+    font-size: 12px;
+    color: #a0a0a0;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+
+
+/* MEDIA QUARIES originales */
+
+
+
+@media only screen and (min-width:360px) and (max-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .glassmorphism-layer {
+        width: 100%;
+    }
+
+    .call h1 {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .contact-form input {
+        margin-left: 40px;
+        width: 30%;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item1{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .item2{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    .item3{
+        grid-column:1/1;
+        grid-row: 3/3;
+    }
+    .item4{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    .item5{
+        grid-column: 1/1;
+        grid-row: 5/5;
+    }
+    .item6{
+        grid-column: 1/1;
+        grid-row: 6/6;
+    }
+    .item7{
+        grid-column: 1/1;
+        grid-row: 7/7;
+    }
+    .item8{
+        grid-column: 1/1;
+        grid-row: 8/8;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputsform {
+        width: 100%;
+        max-width: 768px;
+        min-width: 360px;
+        margin-left: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        max-width: none;
+    }
+
+    #enviar {
+        width: 100%;
+    }
+
+    .seccion-formulario {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .seccion-formulario .texto {
+        text-align: left;
+        margin-bottom: 20px;
+        margin-top: 80px;
+    }
+
+    .texto {
+        line-height: 35px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    #enviar {
+        width: calc(100% - 20px);
+    }
+}
+
+
+
+@media only screen and (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 500px);
+        padding: 40px;
+    }
+}
